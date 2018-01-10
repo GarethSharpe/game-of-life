@@ -1,0 +1,7 @@
+.main {
+	display: flex;
+}
+
+.controller-panel {
+	flex-grow: 100;
+}

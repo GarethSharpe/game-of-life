@@ -1,0 +1,22 @@
+.cell {
+  background: #fff;
+  border: 1px solid #000;
+  float: left;
+  line-height: .1%;
+  margin-right: -1px;
+  margin-top: -1px;
+  width: 1%;
+  padding-top: 1%;
+}
+
+.cell:focus {
+  outline: none;
+}
+
+.cell:hover {
+  background: #eee;
+}
+
+.cell .alive {
+  background: #000;
+}
