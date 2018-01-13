@@ -15,14 +15,16 @@ class Game extends Component {
 
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.generation + 1);
-    const current = history[0];
-    const cells = current.cells.slice();
+    const current = history[history.length - 1];
+    let cells = current.cells.slice();
     const numCells = this.state.numCells;
 
-    if (cells[i])
-      return;
+    cells[i] = true;
 
     this.setState({
+      history : history[history.length - 1] = ([{
+        cells: cells
+      }]),
       numCells: numCells + 1,
     });
   }

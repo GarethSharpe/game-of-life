@@ -4,7 +4,7 @@ import './board.css';
 
 class Board extends Component {
   renderCell(i) {
-  	let isAlive = false;
+  	const isAlive = this.props.cells[i];
     return (
       <Cell
         key={i}

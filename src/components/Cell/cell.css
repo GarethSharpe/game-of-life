@@ -1,5 +1,5 @@
-.cell {
-  background: #fff;
+.cell-dead,
+.cell-alive {
   border: 1px solid #000;
   float: left;
   line-height: .1%;
@@ -7,6 +7,14 @@
   margin-top: -1px;
   width: 1%;
   padding-top: 1%;
+}
+
+.cell-dead {
+  background: #fff;
+}
+
+.cell-alive {
+  background: #000;
 }
 
 .cell:focus {
@@ -17,6 +25,3 @@
   background: #eee;
 }
 
-.cell .alive {
-  background: #000;
-}
