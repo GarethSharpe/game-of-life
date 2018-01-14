@@ -1,6 +1,14 @@
-.controller {
+.container {
   text-align: center;
   background-color: #222;
   height: 100%;
   width: 100%;
+}
+
+.controller {
+	margin-left: 5%;
+	height: 100%;
+  width: 90%;	
+  background: #61dafb;
+  border-radius: 15px;
 }

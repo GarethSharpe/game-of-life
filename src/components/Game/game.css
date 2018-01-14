@@ -1,0 +1,11 @@
+.content {
+	display: flex;
+}
+
+.board {
+	width: 80%;
+}
+
+.controller-panel {
+	flex-grow: 100;
+}

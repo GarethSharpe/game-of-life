@@ -1,5 +1,9 @@
 .board-row:after {
   clear: both;
-  content: "";
   display: table;
+  content: ""; 
+}
+
+.align {
+	margin-left: 1.5%;
 }

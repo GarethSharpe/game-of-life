@@ -3,20 +3,14 @@ import './App.css';
 
 import Game from './components/Game/game.js'
 import Banner from './components/Banner/banner.js'
-import Controller from './components/Controller/controller.js'
 import Footer from './components/Footer/footer.js'
 
 class App extends Component {
   render() {
     return (
-    	<div>
+    	<div className="main">
 	      <Banner></Banner>
-	      <div className='main'>
-		      <Game></Game>
-		      <div className='controller-panel'>
-		      	<Controller></Controller>
-		      </div>
-		  </div>
+		  <Game></Game>
 		  <Footer></Footer>
       </div>
     );

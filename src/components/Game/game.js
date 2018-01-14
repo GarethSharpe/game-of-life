@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import './game.css';
+
 import Board from '../Board/board.js'
+import Controller from '../Controller/controller.js'
+
 
 class Game extends Component {
   constructor(props) {
@@ -32,15 +36,18 @@ class Game extends Component {
   render() {
     const history = this.state.history.slice(0, this.state.generation + 1);
     const current = history[0];
-    const cells = current.cells.slice();
-    const numCells = this.state.numCells;
 
     return (
-      <div>
-        <Board
-          cells={current.cells}
-          onClick={(i) => this.handleClick(i)}
-        />
+      <div className="content">
+        <div className='board'>
+          <Board
+            cells={current.cells}
+            onClick={(i) => this.handleClick(i)}
+          />
+        </div>
+        <div className='controller-panel'>
+          <Controller/>
+        </div>
       </div>
     );
   }
